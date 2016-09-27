@@ -16,4 +16,4 @@ Import-Module AzureRM.NetCore.Preview
 #Address https://azure.microsoft.com/en-us/documentation/articles/xplat-cli-install/
 
 sudo apt-get install node.js npm -y
-npm install -g azure-cli
+sudo npm install -g azure-cli
