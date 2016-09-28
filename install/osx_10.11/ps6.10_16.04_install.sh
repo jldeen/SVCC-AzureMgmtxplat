@@ -9,7 +9,9 @@ brew install openssl
 ln -s /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib /usr/local/lib/
 ln -s /usr/local/opt/openssl/lib/libssl.1.0.0.dylib /usr/local/lib/
 
-wget https://go.microsoft.com/fwlink/?LinkID=827526
+brew install wget
+
+wget https://download.microsoft.com/download/0/A/3/0A372822-205D-4A86-BFA7-084D2CBE9EDF/dotnet-dev-osx-x64.1.0.0-preview2-003131.pkg
 	
 sudo installer -pkg dotnet-dev-osx-x64.1.0.0-preview2-003131 -target /
 
