@@ -1,30 +1,18 @@
+Param(
+[string]$Location,
+[string]$Resource,
+[string]$Name
+)
+
 azure config mode arm
-azure login
-azure account list
-# ---- Existing Resources ----
- 
-$rgName = "LVMTest"
- 
-$vNet = "LVMTest"
- 
-$subnet = "Default"
- 
-$location = "westus"
- 
-# ---- New Network Resources ----
- 
-$pip = "CoolVHDTest"
- 
-$nic = "LVMNic2"
- 
-# ---- Network Creation ---- 
-azure network public-ip create $rgName $pip -l $location
-azure network nic create $rgName $nic -k $subnet -m $vNet -p $pip -l $location
- 
-# --- Run the command below to grab the ID of the new Nic. Copy it somewhere safe&nbsp;
-azure network nic show $rgName $nic
- 
-# ---- Deployment ---- 
-$deployName = "LVMDemo"
-$template = "C:\Templates\Template1.json" # local file path specified
-azure group deployment create $rgName $deployName -f $template
+
+#azure account list
+
+Write-Output "The Location you're putting your VM in is $Location."
+Write-Output "The name of your resource group is $Resource."
+Write-Output "The name of your deployment is $Name."
+
+$template="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-linux/azuredeploy.json"
+
+azure group create -n $resource -l $location
+azure group deployment create -f $template -g $resource $deploymentName
