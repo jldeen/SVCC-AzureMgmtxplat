@@ -6,7 +6,7 @@ Powershell Core GitHub - https://github.com/PowerShell/PowerShell
 GitHub Repo - https://github.com/jldeen/SVCC-AzureMgmtxplat.git
 Blog - http://jessicadeen.com
 
-Tools 
+#Tools 
 
 Powershell Git - https://github.com/dahlbyk/posh-git
 
