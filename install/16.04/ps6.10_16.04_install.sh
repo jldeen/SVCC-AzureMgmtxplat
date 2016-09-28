@@ -21,3 +21,4 @@ powershell ../../AzureRMNetCorePreview.ps1
 
 sudo apt-get install node.js npm -y
 sudo npm install -g azure-cli
+sudo ln -s /usr/bin/nodejs /usr/bin/node
