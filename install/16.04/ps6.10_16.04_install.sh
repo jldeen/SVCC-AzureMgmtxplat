@@ -13,6 +13,7 @@ wget https://github.com/PowerShell/PowerShell/releases/download/v6.0.0-alpha.10/
 sudo dpkg -i powershell_6.0.0-alpha.10-1ubuntu1.16.04.1_amd64.deb
 sudo apt-get install -f -y
 
+#Azure RM NetCore Preview Module Install
 powershell ../../AzureRMNetCorePreview.ps1
 
 #Install Azure CLI
