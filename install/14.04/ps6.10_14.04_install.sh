@@ -8,6 +8,7 @@ sudo apt-get install -f -y
 
 #Azure RM NetCore Preview Module Install
 powershell ../../AzureRMNetCorePreview.ps1
+powershell Import-Module AzureRM.NetCore.Preview
 
 #Install Azure CLI
 #Address https://azure.microsoft.com/en-us/documentation/articles/xplat-cli-install/

@@ -10,6 +10,8 @@ GitHub Repo - https://github.com/jldeen/SVCC-AzureMgmtxplat.git
 
 Blog - http://jessicadeen.com
 
+GitHub Quickstart Templates - https://github.com/Azure/azure-quickstart-templates
+
 #Tools 
 
 Powershell Git - https://github.com/dahlbyk/posh-git

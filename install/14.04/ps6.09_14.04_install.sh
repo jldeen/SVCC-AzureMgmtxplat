@@ -7,6 +7,7 @@ sudo dpkg -i powershell_6.0.0-alpha.9-1ubuntu1.14.04.1_amd64.deb
 
 #Azure RM NetCore Preview Module Install
 powershell ../../AzureRMNetCorePreview.ps1
+powershell Import-Module AzureRM.NetCore.Preview
 
 #Install Azure CLI
 #Address https://azure.microsoft.com/en-us/documentation/articles/xplat-cli-install/
