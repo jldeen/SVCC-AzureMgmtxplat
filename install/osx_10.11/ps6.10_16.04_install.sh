@@ -13,7 +13,7 @@ brew install wget
 
 wget https://download.microsoft.com/download/0/A/3/0A372822-205D-4A86-BFA7-084D2CBE9EDF/dotnet-dev-osx-x64.1.0.0-preview2-003131.pkg
 	
-sudo installer -pkg dotnet-dev-osx-x64.1.0.0-preview2-003131 -target /
+sudo installer -pkg dotnet-dev-osx-x64.1.0.0-preview2-003131.pkg -target /
 
 #PowerShell Core 6.10
 wget https://github.com/PowerShell/PowerShell/releases/download/v6.0.0-alpha.10/powershell-6.0.0-alpha.10.pkg
