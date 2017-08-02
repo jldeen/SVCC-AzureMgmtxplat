@@ -14,7 +14,7 @@ sudo apt-get install -y powershell
 
 #Azure RM NetCore Preview Module Install
 sudo powershell Install-Module -Name AzureRM.Netcore
-sudo powershell Import-Module AzureRM.NetCore.Preview
+sudo powershell Import-Module AzureRM.Netcore
 
 if [[ $? -eq 0 ]]
     then
