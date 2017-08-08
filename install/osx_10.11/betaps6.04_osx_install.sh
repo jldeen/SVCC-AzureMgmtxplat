@@ -21,8 +21,9 @@ wget https://github.com/PowerShell/PowerShell/releases/download/v6.0.0-beta.4/po
 sudo installer -pkg powershell-6.0.0-beta.4-osx.10.12-x64.pkg -target /
 
 #Azure RM NetCore Preview Module Install
-sudo powershell Install-Module -Name AzureRM.Netcore
-sudo powershell Import-Module AzureRM.Netcore
+sudo powershell -Command {Install-Module -Name AzureRM.Netcore}
+sudo powershell -Command {Import-Module -Name AzureRM.Netcore}
+
 if [[ $? -eq 0 ]]
     then
         echo "Successfully installed PowerShell Core with AzureRM NetCore Preview Module."
